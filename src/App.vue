@@ -3,8 +3,14 @@ import { ref } from "vue";
 import { questions } from "./assets/questions.js"
   const deck = ref([...questions]);
     const selectedCard = ref('');
+    const animateDeck = ref(false);
 
     function drawCard() {
+      animateDeck.value = true;
+      setTimeout(() => {
+        animateDeck.value = false;
+      }, 1000);
+      console.log(animateDeck.value, 'animateDeck.value')
       if (deck.value.length === 0) {
         selectedCard.value = '';
         return;
@@ -22,12 +28,12 @@ import { questions } from "./assets/questions.js"
 <template>
   <div class="table-wrapper">
     <div class="deck-container">
-      <div class="deck-wrapper"></div>
+      <div v-if="animateDeck" class="deck-wrapper" :class="{'draw': animateDeck}" id="deck"></div>
     </div>
     <div class="player-container">
       <div class="card-wrapper" :class="{'empty-card': !selectedCard}">{{selectedCard}}</div>
       <div class="button-container">
-        <button v-if="deck.length !== 0" @click="drawCard">Draw Card</button>
+        <button v-if="deck.length !== 0" @click="drawCard">Draw Cards</button>
         <button @click="resetDeck">Reset Deck</button>
       </div>
     </div>
@@ -37,12 +43,12 @@ import { questions } from "./assets/questions.js"
 <style scoped>
 .table-wrapper {
   display: flex;
-  /* flex-direction: column; */
   gap: 20px;
   padding: 100px;
   background: #729B79;
 }
 .deck-wrapper {
+  position: absolute;
   width: 240px;
   height: 350px;
   border-radius: 10px;
@@ -50,7 +56,6 @@ import { questions } from "./assets/questions.js"
   color: #2E2C2F;
   font-weight: 600;
   padding: 20px;
-  /* make text in the middle of div */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -70,12 +75,24 @@ import { questions } from "./assets/questions.js"
   color: #2E2C2F;
   font-weight: 600;
   padding: 20px;
-  /* make text in the middle of div */
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .empty-card {
   display: none;
+}
+
+.draw {
+  animation: move-and-rotate 1s forwards;
+}
+
+@keyframes move-and-rotate {
+  from {
+    transform: rotate(0deg) translateX(0px);
+  }
+  to {
+    transform: rotate(180deg) translateX(500px);
+  }
 }
 </style>
