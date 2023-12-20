@@ -4,7 +4,6 @@ export const questions = [
   "Adakah perilaku rekan kerja yg membuatmu senang? Mengapa?",
   "Sampaikan sebuah hal yang kamu kagumi dari pimpinan tertinggi di permainan ini.",
   "Deskripsikan kantor ideal menurutmu?",
-  "Menurutmu, apakah persaingan di perusahaan ini sehat?",
   "Jika perusahaan ini sedang melakukan PHK dan kamu hanya bisa mempertahankan satu anggota tim, kamu akan memilih____?",
   "Apa yang harus ditingkatkan pemain di sebelah kirimi sebagai rekan kerja?",
   "Adakah hal yang kamu lebih-lebihkan saat wawancara seleksi karyawan? ceritakan.",
@@ -13,8 +12,6 @@ export const questions = [
   "Hal apa saja yang kamu lakukan sebelum bekerja/pergi ke kantor?",
   "Sebutkan satu hal yang paling kamu sukai dari bekerja di perusahaan ini?",
   "Jika perusahaan ini bangkrut apa yang akan kamu lakukan?",
-  "Menurutmu, apakah gajimu saat ini terlalu tinggi, rendah atau sesuai? Jawab dengan jujur.",
-  "Apa kelebihan pemain di sebelah kirimu sebagai rekan kerja?",
   "Ceritakan pengalaman bekerjamu yang paling tidak menyenangkan?",
   "Apa yang ingin kamu capai dalam karirmu 3 tahun ke depan?",
   "Sampai kapan rencanamu bekerja di perusahaan ini?",
@@ -40,7 +37,13 @@ export const questions = [
   "Apakah kamu pernah memeiliki perasaan dengan rekan kerjamu? Ceritakan.",
   "Dari skala 1-10, seberapa efektif kerjasama tim kita sejauh ini?",
   "Menurutmu, hal apa yang dapat meningkatkan kinerjamu?",
-  "Apa kelebihan pemain di sebelah kirimu sebagai rekan kerja?"
+  "Sebutkan 1 permasalahan terbesar yg pernah dialami tim mu, dan jelaskan kontribusimu dalam menimbulkan masalah tersebut",
+  "jika kamu jadi presiden, sebutkan 3 target yang akan kamu lakukan",
+  "Menurutmu definisi tim yang sukses itu seperti apa?",
+  "Menurutmu definisi work life balance itu seperti apa?",
+  "Sebutkan pancasila sila ke 4",
+  "Kamu lebih suka olah raga di jam berapa?",
+  "jika jadi power ranger, kamu ingin jadi ranger warna apa? dan mengapa?"
 ];
 
 export const additionalQuestions = [

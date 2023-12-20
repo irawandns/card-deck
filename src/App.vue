@@ -27,14 +27,16 @@ import { questions } from "./assets/questions.js"
 
 <template>
   <div class="table-wrapper">
-    <div class="deck-container">
-      <div v-if="animateDeck" class="deck-wrapper" :class="{'draw': animateDeck}" id="deck"></div>
-    </div>
-    <div class="player-container">
-      <div class="card-wrapper" :class="{'empty-card': !selectedCard}">{{selectedCard}}</div>
-      <div class="button-container">
-        <button v-if="deck.length !== 0" @click="drawCard">Draw Cards</button>
-        <button @click="resetDeck">Reset Deck</button>
+    <div class="play-area-container">
+      <div class="deck-container">
+        <div v-if="animateDeck" class="deck-wrapper" :class="{'draw': animateDeck}" id="deck"></div>
+      </div>
+      <div class="player-container">
+        <div class="card-wrapper" :class="{'empty-card': !selectedCard}">{{selectedCard}}</div>
+        <div class="button-container">
+          <button v-if="deck.length !== 0" @click="drawCard">Draw Cards</button>
+          <button @click="resetDeck">Reset Deck</button>
+        </div>
       </div>
     </div>
   </div>
@@ -43,8 +45,10 @@ import { questions } from "./assets/questions.js"
 <style scoped>
 .table-wrapper {
   display: flex;
-  gap: 20px;
-  padding: 100px;
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
   background: #729B79;
 }
 .deck-wrapper {
@@ -84,7 +88,7 @@ import { questions } from "./assets/questions.js"
 }
 
 .draw {
-  animation: move-and-rotate 1s forwards;
+  animation: move-and-rotate 0.5s forwards;
 }
 
 @keyframes move-and-rotate {
@@ -92,7 +96,7 @@ import { questions } from "./assets/questions.js"
     transform: rotate(0deg) translateX(0px);
   }
   to {
-    transform: rotate(180deg) translateX(500px);
+    transform: rotate(180deg) translateX(400px);
   }
 }
 </style>
