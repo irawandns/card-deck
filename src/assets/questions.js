@@ -22,7 +22,7 @@ export const questions = [
   "Menurutmu, apakah deskripsi pekerjaan dan struktur organisasi di perusahaan ini sudah jelas? Mengapa?",
   "Jenis pekerjaan mana yang kamu lebih suka: rutin dan stabil atau dinamis dan menantang?",
   "Hal apa saja yang kamu lakukan sebelum pergi ke kantor?",
-  "Akui sebuah prasangka burukmu terhadap salah satu pemain, yang ternyatam salah.",
+  "Akui sebuah prasangka burukmu terhadap salah satu pemain, yang ternyata salah.",
   "Sebutkan satu kebiasaan rekan kerja yang membuatmu terganggu.",
   "Siapa rekan kerja yang menjadi panutanmu? Mengapa?",
   "Apa hal yang harus ditingkatkan pemain di sebelah kirimu sebagai rekan kerja?",
@@ -58,3 +58,32 @@ export const additionalQuestions = [
   "Bagaimana kamu memenuhi ekspektasi pimpinanmu?",
   "Bagaimana kamu mengatasi konflik di tempat kerjamu?"
 ];
+
+export const nonWorkQuestions = [
+  'Apakah anda puas dengan hasil pemilu 2024?',
+  'Kalau harus tinggal di luar negeri, pilih negara apa?',
+  'Beberapa tahun kerja remote, tips apa yang bisa anda berikan ke orang lain?',
+  'Belakangan lagi suka nonton apa sih di youtube/netflix/dll.?',
+  'Long weekend kemarin ngapain aja?',
+  'Pengen belajar apasih belakangan ini tapi belum sempet?',
+  'Apa nasihat terbaik yang pernah kamu terima?',
+  'Jika kamu terdampar di pulau terpencil, apa tiga hal yang Anda bawa?',
+  'Apa hobi atau aktivitas favorit Anda di waktu luang?',
+  'Apa kegagalan terbesarmu dan apa yang kamu pelajari darinya?',
+  'Apa hal paling spontan (uhuy) yang pernah kamu lakukan?',
+  'Ceritakan tentang orang yang paling menginspirasimu',
+  'Apa yang lebih penting bagimu, uang atau kebahagiaan?',
+  'Apa habit yang ingin kamu tinggalkan belakangan ini?',
+  'Apa habit yang ingin kamu kembangkan belakangan ini?',
+  'Rumah impian di pikiranmu seperti apa?',
+  'Hal impulsif apa yang pernah kamu checkout?',
+  'Hal apa yang menurut kamu paling overrated?',
+  'Kamu ngerasa paling beruntung soal apa dalam hidupmu?',
+  'Apa parfum kamu?',
+  'Apa yang bikin kamu ngerasa paling insecure?',
+  'kamu invest dimana nih belakangan ini?',
+  'Apa yang ingin kamu tanyakan kepada orang disebelahmu?',
+  'Apa 3 rasa mie instan favorite kamu?',
+  'Apa sarapan favorit kamu?',
+  'Apa makanan yang kamu benci banget waktu kecil tapi sekarang biasa aja/suka?'
+]
