@@ -81,8 +81,8 @@ import { nonWorkQuestions } from "./assets/questions.js"
         <div class="card-wrapper" :class="{'empty-card': !selectedCard}">{{selectedCard}}</div>
         <div class="button-container">
           <button v-if="!aiIsLoading && theme !== 'Handmade'" @click="generateWithAI">Generate With AI</button>
-          <button @click="drawCard">Draw Cards</button>
-          <button @click="resetDeck">Reset Deck</button>
+          <button v-if="!aiIsLoading && theme === 'Handmade'" @click="drawCard">Draw Cards</button>
+          <button v-if="!aiIsLoading && theme === 'Handmade'" @click="resetDeck">Reset Deck</button>
         </div>
       </div>
     </div>
